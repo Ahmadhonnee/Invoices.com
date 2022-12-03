@@ -15,7 +15,11 @@ export const InvoicesBar = () => {
       <div className="invoices-bar__left">
         <SectionTitle>Invoices</SectionTitle>
         <LightText>
-          There are {invoicesList?.length || 0} total invoices
+          There are
+          {invoicesList?.length
+            ? " " + invoicesList?.length + " total"
+            : "'t any"}{" "}
+          invoices
         </LightText>
       </div>
       <div className="invoices-bar__right">

@@ -38,7 +38,7 @@ export const Invoices = () => {
         <InvoicesBar />
         {loading ? (
           <Loading />
-        ) : invoicesList ? (
+        ) : invoicesList?.length ? (
           <ul className="invoices__list">
             {invoicesList?.map((invoice) => {
               return (
