@@ -1,0 +1,48 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    background: #373B53;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__logo{
+        aspect-ratio: 1/ 1;
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+        background: url(../../assets/sidebar-logo.png) no-repeat, #7C5DFA;
+        background-position: center center;
+        background-size: contain;
+    }
+    &__user{
+        aspect-ratio: 1/ 1;
+        width: 100%;
+        border-top: 2px solid #494E6E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__avatar{
+            width: 40px;
+            height: 40px;
+            background: url(../../assets/sidebar-nouser.png) no-repeat;
+            background-position: center center;
+            background-size: contain;
+            &.logined{
+                background: url(../../assets/logined-user.png) no-repeat;
+                background-position: center center;
+                background-size: contain;
+            }
+        }
+    }
+    &__mode{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/ 1;
+        width: 100%;
+    }
+}

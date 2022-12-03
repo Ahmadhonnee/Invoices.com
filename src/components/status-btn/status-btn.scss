@@ -1,0 +1,49 @@
+.status-btn--paid{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 29px;
+    background: rgba(51, 214, 159, 0.06);
+    border-radius: 6px;
+    border: none;
+    & > .status-btn__circle{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #33D69F;
+    }
+    & > .status-btn__text{
+        font-family: 'League Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.25px;
+        color: #33D69F;
+    }
+}
+.status-btn--pending{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 29px;
+    background: rgba(255, 143, 0, 0.06);
+    border-radius: 6px;
+    border: none;
+    &> .status-btn__circle{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #FF8F00;
+    }
+    & > .status-btn__text{
+        font-family: 'League Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.25px;
+        color: #FF8F00;
+    }
+}

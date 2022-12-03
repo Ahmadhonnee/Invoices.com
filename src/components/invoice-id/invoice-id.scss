@@ -1,0 +1,13 @@
+    .invoice-id{
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #0C0E16;
+    display: inline-block;
+    &--first{
+        color: #7E88C3 !important;
+    }
+}

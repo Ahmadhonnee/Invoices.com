@@ -1,0 +1,53 @@
+.input{
+    background: #FFFFFF;
+    border: 1px solid #DFE3FA;
+    border-radius: 4px;
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+ 
+
+    
+    &:focus{
+        border-color: #9277FF;
+    }
+    &__container{
+
+        position: relative;
+    }
+    &__label{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-family: 'League Spartan';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.25px;
+        color: #7E88C3;
+        &--error{
+            .input{
+                border-color: red;
+                color: red;
+            }
+            & >.input__texts > span{
+                color: red;
+            }
+        }
+    }
+    &__texts{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &__item{
+        color: #0C0E16;
+        word-wrap: break-word;
+    }
+    &.select{
+        height: 100%;
+    }
+}

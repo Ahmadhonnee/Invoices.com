@@ -1,0 +1,90 @@
+*
+	border: 0
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+\:root
+	--bg: #{hsl(223,10%,90%)}
+	--fg: #{hsl(223,10%,10%)}
+	--c1: #{hsl(3,90%,55%)}
+	--c2: #{hsl(33,90%,55%)}
+	--c3: #{hsl(223,90%,55%)}
+	--c4: #{hsl(273,90%,55%)}
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320))
+
+.loading
+	width: 50%
+	height: 50%
+	margin: auto
+	display: flex
+	align-content: center
+	justify-content: center
+
+.pl1, .pl2
+	justify-content: space-around
+	&__a, &__b, &__c
+		border-radius: 50%
+		width: 1em
+		height: 1em
+		transform-origin: 50% 100%
+
+.pl2
+	&__a, &__b, &__c
+		animation: bounce2 2s linear infinite
+
+.pl2
+	display: flex
+	margin: 1.5em
+	width: 5em
+	height: 5em
+	&__a
+		background: var(--c1)
+	&__b
+		background: var(--c2)
+		animation-delay: 0.1s
+	&__c
+		background: var(--c3)
+		animation-delay: 0.2s
+
+
+/* Animations */
+
+@keyframes bounce2
+	from, to
+		transform: translateY(0) scale(1,1)
+		animation-timing-function: ease-in
+	9%, 29%, 49%, 69%
+		transform: translateY(5em) scale(1,1)
+		animation-timing-function: linear
+	10%
+		transform: translateY(5em) scale(1.5,0.5)
+		animation-timing-function: linear
+	11%, 31%, 51%, 71%, 91%
+		transform: translateY(5em) scale(1,1)
+		animation-timing-function: ease-out
+	20%
+		transform: translateY(2.5em) scale(1,1)
+		animation-timing-function: ease-in
+	30%
+		transform: translateY(5em) scale(1.25,0.75)
+		animation-timing-function: linear
+	40%
+		transform: translateY(3.75em) scale(1,1)
+		animation-timing-function: ease-in
+	50%
+		transform: translateY(5em) scale(1.125,0.875)
+		animation-timing-function: linear
+	60%
+		transform: translateY(4.375em) scale(1,1)
+		animation-timing-function: ease-in
+	70%
+		transform: translateY(5em) scale(1.0625,0.9375)
+		animation-timing-function: linear
+	85%
+		transform: translateY(5em) scale(1,1)
+		animation-timing-function: ease-in
+	90%
+		transform: translateY(5em) scale(1.875,0.125)
+		animation-timing-function: ease-in-out
+
+
