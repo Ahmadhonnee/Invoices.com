@@ -14,7 +14,9 @@ export const InvoicesBar = () => {
     <div className="invoices-bar">
       <div className="invoices-bar__left">
         <SectionTitle>Invoices</SectionTitle>
-        <LightText>There are {invoicesList?.length} total invoices</LightText>
+        <LightText>
+          There are {invoicesList?.length || 0} total invoices
+        </LightText>
       </div>
       <div className="invoices-bar__right">
         <Select changeValues={false}>
